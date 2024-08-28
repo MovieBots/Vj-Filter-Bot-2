@@ -17,9 +17,9 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '29236719'))
-API_HASH = environ.get('API_HASH', '1ccf1bd0a86af974e3210a55f662c062')
+SESSION = environ.get('SESSION', 'botmaster135')
+API_ID = int(environ.get('API_ID', '26597768'))
+API_HASH = environ.get('API_HASH', '340f87444e648a712eae77c310648e21')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -30,9 +30,9 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002074744533'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '893383574').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002222465571').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001860172104'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1249672673 5506357900').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002222465571 -1002046895970').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '893383574').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -71,10 +71,10 @@ CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "") # Necessary If clone 
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+pylTdXC-Tf4zNDc1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+pylTdXC-Tf4zNDc1')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_Linkl')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+pylTdXC-Tf4zNDc1') # Support Chat Link Without https:// or @
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/SimpleNew4')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TG_viewsboster_service')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/hollywoodMoviHDNew')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/SimpleNew4') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
