@@ -252,6 +252,8 @@ async def auto_approve(client, message: ChatJoinRequest):
                             InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                         ],[
                             InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+
+                            InlineKeyboardButton(text="😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='seeplans'),
                         ]]
                         await client.send_message(
                             chat_id=message.from_user.id,
@@ -325,6 +327,8 @@ async def auto_approve(client, message: ChatJoinRequest):
                     InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ],[
                     InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+
+                    InlineKeyboardButton(text="😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='seeplans'),
                 ]]
                 await client.send_message(
                     chat_id=message.from_user.id,
