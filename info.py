@@ -51,7 +51,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002172750957').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://keshavptdr98:aDUpB8AVsou9Xd1a@cluster0.3l8pofa.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://keshavptdr98:D8lbdQUW4euV07l4@cluster0.dok926y.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
@@ -78,7 +78,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+pylTdXC-Tf4zNDc1') # S
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
-PM_SEARCH = bool(environ.get('PM_SEARCH', False))
+PM_SEARCH = bool(environ.get('PM_SEARCH', True))
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
